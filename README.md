@@ -21,7 +21,10 @@ git commit -m "Message"
 git push origin main
 git push origin <branchname>
 
+to switch branch git checkout <name>
 
+git log
+:q
 
 
 

@@ -1,13 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header content
+    <div class="date-row">
+      <button class="nav-btn" id="prevDay" aria-label="Previous day">‹</button>
+      <input type="date" id="dateInput" />
+      <button class="nav-btn" id="nextDay" aria-label="Next day">›</button>
+    </div>
+    <div class="counter">
+      <div class="counter-value" id="counterValue">0%</div>
+      <div class="counter-label">of today's priority weight completed</div>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div> -->
+    <nav>
+      <div class="date-row">
+        <input type="date" id="dateInput" />
+      </div>
+      <div class="counter">
+        <div class="counter-value" id="counterValue">0%</div>
+        <div class="counter-label">of today's priority weight completed</div>
+        <div class="progress-tracker">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h1>Task 1</h1>
+      <h2 id="counter-element">0</h2>
+      <button id="increment-button" onclick="incrementCounter()">
+        Increment
+      </button>
+      <button id="save-button" onclick="save()">Save</button>
+    </main>
+    <section class="reflection">
+      <h2>Reflection</h2>
+      <textarea
+        id="notes"
+        placeholder="How did today go? What did you learn?" 
+      ></textarea>
+      <div class="save-status" id="saveStatus"></div>
+    </section>
+
+    <footer></footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
